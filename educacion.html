@@ -61,6 +61,31 @@
           </tr>
         </tbody>
       </table>
+
+      <form autocomplete="on">
+        <p>
+          <label for="año">Año:</label>
+            <input type="number" name="año" min="1950" max="2017" value="2017" id="año">
+        </p>
+        <p>
+          <lable for="institucion">Institucion:</lable>
+          <input type="text" name="institucion" placeholder="Ej: Harvard University" id="institucion" required>
+        </p>
+        <p>
+          <label for="lugar">Lugar:</label>
+          <br>
+          <textarea name="lugar" rows="4" cols="40" required></textarea>
+        </p>
+        <p>
+          <lable for="culmino">¿Culmino?</lable>
+          <input type="radio" name="genero" id="culmino" required> Si
+          <input type="radio" name="genero" id="culmino" required> No
+        </p>
+        <p>
+          <input type="submit" value="Enviar">
+        </p>
+      </form>
+
     </section>
 
     <footer>
