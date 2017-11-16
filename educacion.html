@@ -8,30 +8,49 @@
   <body>
 
     <header>
-      <h1> <em>Resumen Curricular</em> </h1>
-      <h2>
-        <p><strong>Educacion</strong></p>
-        <!-- <img src="imagenes\Foto Yohel.jpg" alt="Foto de Perfil"> -->
-      </h2>
-      <h3>
-        <ul>
-          <li>Nombres: Yohel Ernesto</li>
-          <li>Apellidos: Benitez Fernandez</li>
-          <li>Fecha de Nacimiento: 23 / Marzo / 1991.</li>
-          <li>Lugar de Nacimiento: Barquisimeto, Venezuela.</li>
-        </ul>
-      </h3>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a> </li>
-          <li><a href="educacion.html">Educacion</a></li>
-          <li><a href="experiencia.html">Experiencia</a></li>
-        </ul>
-      </nav>
+
+      <h1> <em>Resumen Curricular</em> </h1> <!--Titulo General de Hoja de Vida-->
+      <h2> <em>Educacion</em> </h2>
+      <table width="34%">
+        <tr>
+          <td>
+            <fieldset>
+              <legend> <strong>Menu de Navegacion</strong> </legend>
+              <nav>
+                <ul>
+                  <li><a href="index.html">Inicio</a> </li>
+                  <li><a href="educacion.html">Educacion</a></li>
+                  <li><a href="experiencia.html">Experiencia</a></li>
+                </ul>
+              </nav>
+            </fieldset>
+          </td>
+        </tr>
+      </table>
+
+      <table width="34%">
+        <tr>
+          <td>
+            <fieldset>
+              <legend> <strong>Informacion Personal</strong> </legend>
+              <h3>
+                <ul>
+                  <li>Nombres: <em>Yohel Ernesto.</em></li>
+                  <li>Apellidos: <em>Benitez Fernandez.</em></li>
+                  <li>Fecha de Nacimiento: <em>23 / Marzo / 1991.</em></li>
+                  <li>Lugar de Nacimiento: <em>Barquisimeto, Venezuela.</em></li>
+                </ul>
+              </h3>
+            </fieldset>
+          </td>
+        </tr>
+      </table>
+
     </header>
 
+
     <section>
-      <table border="1", cellpadding="10", cellspacing="0">
+      <table border="1", cellpadding="10", cellspacing="2">
         <thead>
           <tr>
             <th>Año</th>
@@ -42,16 +61,16 @@
         </thead>
         <tbody>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>2012</td>
+            <td>Universidad de Carabobo</td>
+            <td>Carabobo, Venezuela</td>
+            <td>No</td>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>2017</td>
+            <td>Next University</td>
+            <td>Internet</td>
+            <td>In Progress</td>
           </tr>
           <tr>
             <td></td>
@@ -61,35 +80,51 @@
           </tr>
         </tbody>
       </table>
-
-      <form autocomplete="on">
-        <p>
-          <label for="año">Año:</label>
-            <input type="number" name="año" min="1950" max="2017" value="2017" id="año">
-        </p>
-        <p>
-          <lable for="institucion">Institucion:</lable>
-          <input type="text" name="institucion" placeholder="Ej: Harvard University" id="institucion" required>
-        </p>
-        <p>
-          <label for="lugar">Lugar:</label>
-          <br>
-          <textarea name="lugar" rows="4" cols="40" required></textarea>
-        </p>
-        <p>
-          <lable for="culmino">¿Culmino?</lable>
-          <input type="radio" name="genero" id="culmino" required> Si
-          <input type="radio" name="genero" id="culmino" required> No
-        </p>
-        <p>
-          <input type="submit" value="Enviar">
-        </p>
-      </form>
+        <form autocomplete="on"><!--aqui comienza el formulario para agregar nueva educacion-->
+          <table width="34%"><!--agregue <table width="33%"> para reducir el tamaño del <Fieldset>-->
+            <tr>
+              <td>
+                <fieldset><!--agregue <fliedset> para que tuviera mas estetica el formulario-->
+                  <legend><strong>Agregar Educacion </strong></legend>
+                <p>
+                  <label for="año">Año:</label>
+                    <select>
+                      <option value="1">2017</option>
+                      <option value="2">2016</option>
+                      <option value="3">2015</option>
+                      <option value="4">2014</option>
+                      <option value="5">2013</option>
+                      <option value="6">2012</option>
+                      <option value="7">2011</option>
+                      <option value="8">2010</option>
+                    </select>
+                </p>
+                <p>
+                  <lable for="institucion">Institucion:</lable>
+                  <input type="text" name="institucion" placeholder="Ej: Next University" id="institucion" required>
+                </p>
+                <p>
+                  <label for="lugar">Lugar:</label>
+                  <br>
+                  <textarea name="lugar" rows="4" cols="40" required></textarea>
+                </p>
+                <p>
+                  <lable for="culmino">¿Culmino?</lable>
+                  <input type="radio" name="culmino" id="culmino" required> Si
+                  <input type="radio" name="culmino" id="culmino" required> No
+                </p>
+                <p>
+                  <input type="submit" value="Enviar">
+                </p>
+                </fieldset>
+              </td>
+            </tr>
+          </table>
+        </form>
 
     </section>
-
     <footer>
-      <a href="infocontacto.html">Informacion de Contacto</a>
+      <a href="infocontacto.html">Haga Click AQUI para ver la informacion de contacto</a>
     </footer>
   </body>
 </html>
